@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-
 import '../screens/home/home_page.dart';
-import '../screens/booking/bookings_page.dart';
-import '../screens/tours/tours_page.dart';
+import '../screens/trips/my_trips_page.dart';
+import '../screens/notifications/notifications_page.dart';
 import '../screens/profile/profile_page.dart';
 
 class BottomNav extends StatefulWidget {
@@ -13,41 +12,44 @@ class BottomNav extends StatefulWidget {
 }
 
 class _BottomNavState extends State<BottomNav> {
-  int currentIndex = 0;
+  int _currentIndex = 0;
 
-  final pages = const [
+  final _pages = const [
     HomePage(),
-    ToursPage(),
-    BookingsPage(),
+    MyTripsPage(),
+    NotificationsPage(),
     ProfilePage(),
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: pages[currentIndex],
+      body: IndexedStack(
+        index: _currentIndex,
+        children: _pages,
+      ),
       bottomNavigationBar: NavigationBar(
-        selectedIndex: currentIndex,
-        onDestinationSelected: (index) {
-          setState(() {
-            currentIndex = index;
-          });
-        },
+        selectedIndex: _currentIndex,
+        onDestinationSelected: (i) => setState(() => _currentIndex = i),
         destinations: const [
           NavigationDestination(
-            icon: Icon(Icons.home),
+            icon: Icon(Icons.home_outlined),
+            selectedIcon: Icon(Icons.home_rounded),
             label: 'Home',
           ),
           NavigationDestination(
-            icon: Icon(Icons.travel_explore),
-            label: 'Tours',
+            icon: Icon(Icons.backpack_outlined),
+            selectedIcon: Icon(Icons.backpack_rounded),
+            label: 'My Trips',
           ),
           NavigationDestination(
-            icon: Icon(Icons.confirmation_num),
-            label: 'Bookings',
+            icon: Icon(Icons.notifications_outlined),
+            selectedIcon: Icon(Icons.notifications_rounded),
+            label: 'Alerts',
           ),
           NavigationDestination(
-            icon: Icon(Icons.person),
+            icon: Icon(Icons.person_outlined),
+            selectedIcon: Icon(Icons.person_rounded),
             label: 'Profile',
           ),
         ],

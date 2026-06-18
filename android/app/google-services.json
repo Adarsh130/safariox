@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "98875422640",
+    "project_id": "safariox",
+    "storage_bucket": "safariox.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:98875422640:android:54a2037f64281f4ff20875",
+        "android_client_info": {
+          "package_name": "com.example.safariox"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "98875422640-ej5tnuem46abvur1788063m4khauhp2o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.safariox",
+            "certificate_hash": "c2a67dc7cad96c79d667ab58d65c788cde7f2ef7"
+          }
+        },
+        {
+          "client_id": "98875422640-8vrqu9u1u2hmm2e3qtko7g0ibgr2nkae.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBL1fPR17heEDPasye4SjgJzWYWrD6tMUw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "98875422640-8vrqu9u1u2hmm2e3qtko7g0ibgr2nkae.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "98875422640-o0s9d4184gga818e7menmdm65c9dkcif.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.safariox"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

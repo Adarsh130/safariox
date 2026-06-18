@@ -50,8 +50,7 @@ SafariOX is a mobile application for browsing and booking tours. It's built with
 3.  **Set up environment variables:**
     Create a `.env` file in the root of the project and add the following:
     ```
-    SUPABASE_URL=your_supabase_url
-    SUPABASE_ANON_KEY=your_supabase_anon_key
+    # No environment variables needed for Firebase in this setup.
     ```
 4.  **Run the app:**
     ```bash
@@ -100,3 +99,4 @@ lib/
 *   `services`: Contains the business logic and API calls (currently empty).
 *   `utils`: Contains utility functions (currently empty).
 *   `widgets`: Contains reusable UI components.
+I components.
